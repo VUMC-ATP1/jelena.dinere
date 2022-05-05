@@ -10,22 +10,23 @@ div {
 #header {
     height: 30px;
     width: 100%;
-    background-color: #249df3;
+    background-color: rgb(93, 132, 209);
     position: fixed;
     z-index: 1;
+    image-orientation: from-image;
 }
 
 #footer {
     height: 40px;
     width: 100%;
-    background-color: #249df3;
+    background-color: rgb(93, 132, 209);
     position: relative;
 }
 
 .left-side {
     height: 1000px;
     width: 45px;
-    background-color: grey;
+    background-color: rgb(93, 132, 209);
     float: left;
     position: fixed;
 }
@@ -33,7 +34,7 @@ div {
 .right-side {
     height: 1010px;
     width: 45px;
-    background-color: grey;
+    background-color: rgb(93, 132, 209);
     float: right;
     position: inherit;
 }
@@ -41,23 +42,31 @@ div {
 .content {
     display: inline-block;
     margin-top: 6px;
-    margin-left: 65px;
-    width: 75%;
+    margin-left: 80px;
+    width: 90%;
     height: 1000px;
+    font-size: medium;
+    font-style: italic;
 }
 
 p,
 li {
-    font-family: 'Courier New', Courier, monospace;
+    font-family: 'Source Serif Pro', serif;
 }
 
-.paragraphstyle {
-    font-style: 25px;
+li {
+    font-style: italic;
     font-weight: bold;
 }
 
+.paragraphstyle {
+    font-style: 20px;
+    font-weight: bold;
+    background-color: bisque;
+}
+
 #copyright {
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family: Arial, sans-serif;
     float: right;
     margin-top: 10px;
     margin-right: 20px;
