@@ -87,22 +87,21 @@ public class HomeWorkTwo {
 //        System.out.println(Math.max(Math.max(number1,number2),number3));
 
         // 4.uzdevums
-// Nestrada, pagaidam nevaru saprast kapec?!
-        System.out.println("Ievadi luksafora krasu");
-        String colour = scanner.nextLine();
-        switch (colour.toLowerCase()) {
-            case "Sarkana":
-                System.out.println("Apstajies un gaidi!!!");
+//Viss strada!!!
+        System.out.println("Write the colour of the traffic light");
+        String colour = scanner.nextLine().toLowerCase();
+        switch (colour) {
+            case "red":
+                System.out.println("Stop!!!");
                 break;
-            case "Dzeltena":
-                System.out.println("Uzmanibu!!!");
+            case "yellow":
+                System.out.println("Attention!!!");
                 break;
-            case "Zaļa":
-                System.out.println("Vari iet!!!");
+            case "green":
+                System.out.println("You can go!!!");
                 break;
             default:
-                System.out.println("Kaut kas nav kartiba!!");
-
+                System.out.println("Something went wrong!!");
         }
     }
 }
