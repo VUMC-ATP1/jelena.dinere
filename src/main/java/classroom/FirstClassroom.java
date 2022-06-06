@@ -3,15 +3,15 @@ package classroom;
 public class FirstClassroom {
     public static void main(String[] args) {
         System.out.println("Hello World! My name is: Jelena");
-        System.out.println("First argument is: " + args[0]);
-        System.out.println("Second argument is " + args[1]);
+        //System.out.println("First argument is: " + args[0]);
+        //System.out.println("Second argument is " + args[1]);
 
         // String args = {"Hello, World"};
         String[] twoWords = {"Hello, World"};
 
         //Primitive data type(numbers)
         byte floorCount = 7;
-        byte[]floors = {1,2,3,4,5,6,7};
+        byte[] floors = {1, 2, 3, 4, 5, 6, 7};
         //Concatenation
         System.out.println("My house consists of " + floorCount + " floors!");
 
