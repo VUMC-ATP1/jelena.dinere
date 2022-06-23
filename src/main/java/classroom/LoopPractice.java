@@ -1,5 +1,6 @@
 package classroom;
 
+import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
@@ -92,6 +93,7 @@ public class LoopPractice {
         for (int j = 0; j < numbers.length; j++) {
             numbers[j] = j;
         }
+        System.out.println(Arrays.toString(numbers));
         for (int k = 0; k <= numbers.length; k++) {
             if (k % 2 == 0) {
                 System.out.println("Even number:" + k);
@@ -104,19 +106,34 @@ public class LoopPractice {
                 System.out.println(country);
             }
         }
-// majas ar numuriem 1 lidz 50
+        // create int [] with from 0 lid z 100
+        // print all numbers for each
+        int[] numberNew = new int[100];
+        for (int j = 0; j < numberNew.length; j++) {
+            numberNew[j] = j;
+        }
+        for (int num1 : numberNew) {
+            System.out.println(num1 + ",");
+        }
+        // majas ar numuriem 1 lidz 50
         //numuri kuri nedalas ar 3 un 5 neder
 
-        int houseCount = 0;
+        //int houseCount = 0;
+        List<Integer> houses = new ArrayList<>();
         for (int k = 1; k <= 50; k++) {
             if (k % 3 == 0 || k % 5 == 0) {
-                System.out.println("Numuri neder:" + k);
+                System.out.println("Numuri neder: " + k);
             } else {
                 System.out.println("Numuri der: " + k);
-                houseCount++;
+                houses.add(k);
+                //houseCount++;
             }
         }
-        System.out.println("Numuru skaits atbilst prasibam :" + houseCount);
+        //System.out.println("Numuru skaits atbilst prasibam :" + houseCount);
+        System.out.println("Numuru skaits atbilst prasibam :" + houses.size());
+        for (int houseNumber : houses) {
+            System.out.println("Numurs kurs der: " + houseNumber);
+        }
 // skaita i burtus;
         String sentence = "Hello, my name is Nikita";
         int count = 0;
